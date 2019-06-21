@@ -52,7 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'incentive_program.urls'
+ROOT_URLCONF = 'service.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'incentive_program.wsgi.application'
+WSGI_APPLICATION = 'service.wsgi.application'
 
 
 # Database
