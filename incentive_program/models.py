@@ -1,12 +1,10 @@
-from __future__ import unicode_literals
-
 from django.db import models
 
 
 class Payments(models.Model):
     ACUTE_CARE_HOSPITALS = 'Acute Care Hospitals'
     CHILDRENS_HOSPITALS = 'Children\'s Hospitals'
-    HOSPITAL_TYPE_CHOICES =(
+    HOSPITAL_TYPE_CHOICES = (
         (ACUTE_CARE_HOSPITALS, ACUTE_CARE_HOSPITALS),
         (CHILDRENS_HOSPITALS, CHILDRENS_HOSPITALS),
     )
@@ -96,7 +94,7 @@ class Payments(models.Model):
     )
     last_payment_year = models.IntegerField(
         db_column='Last_Payment_Year',
-        blank=True, 
+        blank=True,
         null=True,
     )
     last_payment_criteria = models.CharField(
